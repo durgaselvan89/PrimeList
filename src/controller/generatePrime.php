@@ -1,3 +1,6 @@
+<?php
+require_once('Model/PrimeModel.php');
+require_once('view/primeView.php');
 class generatePrime{
   
   function __construct(){
@@ -10,3 +13,5 @@ class generatePrime{
   }
   
 }
+
+?>
