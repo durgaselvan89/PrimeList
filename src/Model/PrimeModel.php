@@ -1,3 +1,5 @@
+<?php
+
 /********** Model for generating prime number */
 class primeModel {
  
@@ -47,3 +49,4 @@ class primeModel {
  }
   
 }
+?>
