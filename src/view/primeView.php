@@ -1,3 +1,5 @@
+<?php
+
 /***********generate prime number list view ****************/
 
 class primeView {
@@ -34,3 +36,4 @@ class primeView {
     return $data;
   }
 }
+?>
