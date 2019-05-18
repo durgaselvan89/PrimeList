@@ -1,24 +1,26 @@
 <?php
 use PHPUnit\Framework\TestCase;
-require_once('src/getPrime.php');
+require_once('src/Model/PrimeModel.php');
 
 class getPrimeTest extends PHPUnit_Framework_TestCase
 {
-  public function setUp(){ }
+  public function setUp(){
+  
+  }
   public function tearDown(){ }
 
-  public function testConnectionIsValid()
+  public function testPrime()
   {
     // test to ensure that the object from an fsockopen is valid
-    $obj = new getPrime();
     $number = 10;
-	$result = $obj->GetPrimeNumbers($number);
+	$obj = new primeModel($number);
+    $result = $obj->generatePrime();
 	
     $this->assertTrue(count($result)>0);
 	
-	$number = 0;
+	/*$number = 0;
 	$result = $obj->GetPrimeNumbers($number);
-	$this->assertEquals($result, false);
+	$this->assertEquals($result, false);*/
   }
 }
 ?>
